@@ -1,0 +1,265 @@
+<html>
+    
+    <head>
+        <script src="https://code.jquery.com/jquery-2.2.2.min.js" integrity="sha256-36cp2Co+/62rEAAYHLmRCPIych47CvdM+uTBJwSzWjI=" crossorigin="anonymous"></script>
+        <script src="https://code.highcharts.com/stock/highstock.js"></script>
+        <script src="https://code.highcharts.com/stock/modules/exporting.js"></script>
+
+    </head>
+    <body>
+    <div id="chartDemoContainer">
+        </div>
+      
+<script>
+
+
+
+        var Markit = {};
+
+        function init(stock_symbol){
+            new Markit.InteractiveChartApi(stock_symbol,1095);
+        }
+    
+/**
+ * Define the InteractiveChartApi.
+ * First argument is symbol (string) for the quote. Examples: AAPL, MSFT, JNJ, GOOG.
+ * Second argument is duration (int) for how many days of history to retrieve.
+ */
+Markit.InteractiveChartApi = function(symbol,duration){
+    this.symbol = symbol.toUpperCase();
+    this.duration = duration;
+    this.PlotChart();
+};
+
+Markit.InteractiveChartApi.prototype.PlotChart = function(){
+    
+    var params = {
+        parameters: JSON.stringify( this.getInputParams() )
+    }
+
+    $.ajax({
+        beforeSend:function(){
+            $("#chartDemoContainer").text("Loading chart...");
+        },
+        data: params,
+        url: "http://dev.markitondemand.com/Api/v2/InteractiveChart/jsonp",
+        dataType: "jsonp",
+        context: this,
+        success: function(json){
+            //Catch errors
+            if (!json || json.Message){
+                console.error("Error: ", json.Message);
+                return;
+            }
+            this.render(json);
+        },
+        error: function(response,txtStatus){
+            console.log(response,txtStatus)
+        }
+    });
+};
+
+Markit.InteractiveChartApi.prototype.getInputParams = function(){
+    return {  
+        Normalized: false,
+        NumberOfDays: this.duration,
+        DataPeriod: "Day",
+        Elements: [
+            {
+                Symbol: this.symbol,
+                Type: "price",
+                Params: ["ohlc"] //ohlc, c = close only
+            },
+            {
+                Symbol: this.symbol,
+                Type: "volume"
+            }
+        ]
+       
+    }
+};
+
+Markit.InteractiveChartApi.prototype._fixDate = function(dateIn) {
+    var dat = new Date(dateIn);
+    return Date.UTC(dat.getFullYear(), dat.getMonth(), dat.getDate());
+};
+
+Markit.InteractiveChartApi.prototype._getOHLC = function(json) {
+    var dates = json.Dates || [];
+    var elements = json.Elements || [];
+    var chartSeries = [];
+
+    if (elements[0]){
+
+        for (var i = 0, datLen = dates.length; i < datLen; i++) {
+            var dat = this._fixDate( dates[i] );
+            var pointData = [
+                dat,
+                elements[0].DataSeries['open'].values[i],
+                elements[0].DataSeries['high'].values[i],
+                elements[0].DataSeries['low'].values[i],
+                elements[0].DataSeries['close'].values[i]
+            ];
+            chartSeries.push( pointData );
+        };
+    }
+    return chartSeries;
+};
+
+Markit.InteractiveChartApi.prototype._getVolume = function(json) {
+    var dates = json.Dates || [];
+    var elements = json.Elements || [];
+    var chartSeries = [];
+
+    if (elements[1]){
+
+        for (var i = 0, datLen = dates.length; i < datLen; i++) {
+            var dat = this._fixDate( dates[i] );
+            var pointData = [
+                dat,
+                elements[1].DataSeries['volume'].values[i]
+            ];
+            chartSeries.push( pointData );
+        };
+    }
+    return chartSeries;
+};
+
+Markit.InteractiveChartApi.prototype.render = function(data) {
+    //console.log(data)
+    // split the data set into ohlc and volume
+    var ohlc = this._getOHLC(data),
+        volume = this._getVolume(data);
+        if (ohlc.length==0){
+            $("#chartDemoContainer").text('No historical data found for the stock');
+            return;
+        }
+    // set the allowed units for data grouping
+        var groupingUnits = [[
+            'week',                         // unit name
+            [1]                             // allowed multiples
+        ], [
+            'month',
+            [1, 2, 3, 4, 6]
+        ]];
+
+    // create the chart
+    $('#chartDemoContainer').highcharts('StockChart', {
+        
+        rangeSelector: {
+            buttons: [{
+            type: 'week',
+            count: 1,
+            text: '1w'
+        }, {
+            type: 'month',
+            count: 1,
+            text: '1m'
+        }, {
+            type: 'month',
+            count: 3,
+            text: '3m'
+        }, {
+            type: 'month',
+            count: 6,
+            text: '6m'
+        }, {
+            type: 'ytd',
+            text: 'YTD'
+        }, {
+            type: 'year',
+            count: 1,
+            text: '1y'
+        }, {
+            type: 'all',
+            text: 'All'
+        }],
+            selected: 0,
+            inputEnabled : false
+        },
+
+        title: {
+            text: this.symbol + ' Stock Value'
+        },
+
+        yAxis: [{
+            title: {
+                text: 'Stock Value',
+            }
+        }],
+        xAxis: {
+            type: 'datetime',
+        },
+        series: [{
+            type: 'area',
+            name: this.symbol,
+            data: ohlc,
+            dataGrouping: {
+                units: groupingUnits
+            },
+            fillColor : {
+                    linearGradient : {
+                        x1: 0,
+                        y1: 0,
+                        x2: 0,
+                        y2: 1
+                    },
+                    stops : [
+                        [0, Highcharts.getOptions().colors[0]],
+                        [1, Highcharts.Color(Highcharts.getOptions().colors[0]).setOpacity(0).get('rgba')]
+                    ]
+                }
+        }],
+        tooltip: {
+                formatter: function() {
+                    var s =  formatDate(this.x) ;
+                    $.each(this.points, function(i, point) {
+                    s += '<br/><span style="color:'+ point.series.color +'">\u25CF</span> ' + point.series.name + ': $' + point.y.toFixed(2);
+                    });
+
+                    return s;
+                    } ,
+                shared: true
+            },
+        exporting: {
+            enabled: false
+        },
+        credits: {
+            enabled:true
+        }
+    });
+};
+    
+        var short_month = new Array();
+                    short_month[0] = "Jan";
+                    short_month[1] = "Feb";
+                    short_month[2] = "Mar";
+                    short_month[3] = "Apr";
+                    short_month[4] = "May";
+                    short_month[5] = "Jun";
+                    short_month[6] = "Jul";
+                    short_month[7] = "Aug";
+                    short_month[8] = "Sep";
+                    short_month[9] = "Oct";
+                    short_month[10] = "Nov";
+                    short_month[11] = "Dec";
+    
+        var days=new Array();
+                    days[0]="Sunday";
+                    days[1]="Monday";
+                    days[2]="Tuesday";
+                    days[3]="Wednesday";
+                    days[4]="Thursday";
+                    days[5]="Friday";
+                    days[6]="Saturday";
+              
+    
+        function formatDate(timestamp){
+            var dat = new Date(timestamp);
+            return days[dat.getDay()]+", "+short_month[dat.getMonth()]+" "+dat.getDate()+", "+dat.getFullYear();
+        }
+
+
+        </script>
+    </body>
+</html>

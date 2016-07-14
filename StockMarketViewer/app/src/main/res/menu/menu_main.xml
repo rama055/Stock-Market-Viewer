@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/favorites"
+        android:icon="@drawable/emptystar"
+        app:showAsAction="ifRoom"
+        android:title="@string/action_favorite">
+    </item>
+    <item
+        android:id="@+id/facebook"
+        android:icon="@drawable/facebook"
+        app:showAsAction="ifRoom"
+        android:title="@string/facebook">
+    </item>
+</menu>

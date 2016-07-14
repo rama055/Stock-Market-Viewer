@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.nhaarman.listviewanimations/lib-manipulation/3.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5660e4bf78904137e90e62a5d4cc2e987258f02c">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.nhaarman.listviewanimations-lib-manipulation-3.1.0_68d958558553fd2644cdca293b325ab90ff003db/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.nhaarman.listviewanimations/lib-core-slh/3.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="49223278ec2ede1d05d00868c5ce3e077b4016f8">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.nhaarman.listviewanimations-lib-core-slh-3.1.0_ab5100af7d561088ad204f9c4611ca5c57e0dac5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.android.support/design/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f0001e71cea6ae432a00021c6f727f5ef0f3d27e">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-23.3.0_4cbb58016fca4a552e139d098e1fe7f23a674d18/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="1b8e03daaa43fb0a4cd57e378167c2fd70454c1e">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-23.3.0_85c8224d71b16da8941182e0b4b229697d2335bd/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/lib/nineoldandroids-2.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/2/nineoldandroids-2.4.0_10314e930ad7046398f90de63e3dd0b2086758a7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="a0b5d60246cd9d4f3f2443611b3b4c25265840b5">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-23.3.0_efc4027bc6c19ac4381943913c270226e8f593c5/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.nhaarman.listviewanimations/lib-core/3.1.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="acf66033b1418ccf9e15c8e77750981e4809c4ea">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.nhaarman.listviewanimations-lib-core-3.1.0_e71493b56a6da5124c4374d250a39ddaa2e293b6/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_5c67f96bb5c5af211697aad0dbed0b9e6b4fcd18/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.android.support/cardview-v7/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="cb86970df0f0f25f766d320b279c7858c1ca0003">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-cardview-v7-23.2.1_55f2ad87dc040cfd3ac622ce9fd3b4d9a4ee1f6d/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.github.chrisbanes/PhotoView/1.2.6/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="e39dd45427d2ba136c82ed1946f80dd3dff16695">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.github.chrisbanes-PhotoView-1.2.6_31afb0c49321d094dca01a87989682bc94c3f3ac/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-applinks-1.4.0_c265d3afed8bc23ad3b996878fef0d789bedafb0/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/lib/gson-2.6.2.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="f1bc476cc167b18e66c297df599b2377131a8947">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/2/gson-2.6.2_81455bf5948d75217f19d65d2a9958055011412e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.facebook.android/facebook-android-sdk/4.11.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="86da97c30f50a67ddabe2cf7040713ad17153fce">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.facebook.android-facebook-android-sdk-4.11.0_e4941076c9ddaa26dcc8c3513de5547c8f589c17/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="bfc33f3a69199585df15c383e67f675993a80854">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_75ab0db900feca7669063b5193e9fdc2d6211b3b/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/.gradle/caches/modules-2/files-2.1/org.apache.commons/commons-lang3/3.4/5fe28b9518e58819180a43a850fbc0dd24b7c050/commons-lang3-3.4.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="5fe28b9518e58819180a43a850fbc0dd24b7c050">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/commons-lang3-3.4_49c019b9953d2b83b8296cffa1738626c22c884e/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0c035ea9c3a9eea61f473aa52fe781052dff4fef">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_2c84c72c2222bbd80b2432152d80446d422c9aaf/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="8a034dd16c0dfd75fe86c52c2cd581592acc684a">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-23.3.0_d0415e88aff0eebc43202bbce03f94c4321dea71/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="debf30ce0a7560396b6235edef77e447006454c2">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-23.3.0_068ec9f7e0ca3e66a6438fc03e9241c3c4c9f605/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.android.support/customtabs/23.2.1/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="0e5a66a941515d873a34065fe44fbba6ef422a1b">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-customtabs-23.2.1_aa065a170c64b356016681348a4c52c251222c71/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.android.support/support-v4/23.3.0/jars/libs/internal_impl-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="4da5a4d697d32497c6f85567a5112e62fdfd0676">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-23.3.0_dfbbe1f419e7e7703cee3c964186e068a1e7a924/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/23.3.0/jars/classes.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="23be6993826b8fd88bbc8d14928bb3b8960d3d4e">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-23.3.0_b97c57dad572d36f4ad0c947c41b19885e2a5fc7/classes.dex" />
+    </item>
+    <item
+        jar="/Users/AbhishekSharmaRamachandra/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/23.3.0/support-annotations-23.3.0.jar"
+        jumboMode="true"
+        revision="23.0.3"
+        sha1="db7791d75a07fef9844d06236c1c59ba7bf6997c">
+        <dex dex="/Users/AbhishekSharmaRamachandra/AndroidStudioProjects/StockMarketViewer/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-23.3.0_af51f334baf8538c38b20399541fb2d1f133a8d3/classes.dex" />
+    </item>
+
+</items>

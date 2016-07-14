@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingLeft="15dp"
+    android:paddingTop="10dp">
+
+    <TextView
+        android:id="@+id/fav_symbol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"></TextView>
+
+    <View
+        android:id="@+id/anchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_centerInParent="true" />
+
+
+    <TextView
+        android:id="@+id/fav_change"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="15dp"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"></TextView>
+
+    <TextView
+        android:id="@+id/fav_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@id/fav_change"
+        android:layout_toRightOf="@id/anchor"
+        android:textAppearance="?android:attr/textAppearanceLargePopupMenu"></TextView>
+
+
+    <TextView
+        android:id="@+id/fav_name"
+        android:layout_toLeftOf="@id/anchor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/fav_symbol"
+        android:layout_alignStart="@id/fav_symbol"
+        android:layout_below="@id/fav_symbol"
+        android:textAppearance="?android:attr/textAppearanceSmall"></TextView>
+
+
+    <TextView
+        android:id="@+id/fav_market"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/fav_price"
+        android:layout_alignStart="@id/fav_price"
+        android:layout_below="@id/fav_price"
+        android:textAppearance="?android:attr/textAppearanceSmall"></TextView>
+
+</RelativeLayout>
